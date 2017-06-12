@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="400" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <pattern patternTransform="rotate(45)" id="circle" x="40" y="40" width="8"
+                 height="8" patternUnits="userSpaceOnUse" >
+            <circle cx="3" cy="3" r="2.9" fill= "grey" ></circle>
+
+            <linearGradient id="fon" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="10%" stop-color="#fff"></stop>
+            <stop offset="50%" stop-color="#a9a9a9"></stop>
+            <stop offset="90%" stop-color="#fff"></stop>
+            </linearGradient>
+        </pattern>
+        <radialGradient id="screen" cx="150%" cy="110%" r="2.5">
+            <stop offset="40%" stop-color="black"></stop>
+            <stop offset="59.9%" stop-color="black"></stop>
+            <stop offset="60%" stop-color="#a9a9a9"></stop>
+            <stop offset="73%" stop-color="#f0f0f0"></stop>
+        </radialGradient>
+    </defs>
+    <rect x="10" y="10" rx="10" ry="10" width="270" height="230" stroke="black"
+          stroke-width="1" fill="url(#fon)"></rect>
+    <rect x="30" y="30" rx="10" ry="10" width="230" height="190" stroke="black"
+          stroke-width="1" fill="url(#circle)"></rect>
+    <path fill="url(#fon)" stroke="black" stroke-width="1" d="M 60,60 h 170 a 10 10 0 0 1 10,10
+    v 90 a 10 10 0 0 1 -10,10 h -70 v 10 h 70 v 10 h -170 v -10 h 70 v -10 h -70
+    a 10 10 0 0 1 -10,-10 v -90 a 10 10 0 0 1 10,-10 Z"></path>
+    <rect x="60" y="70" width="170" height="90" stroke="black"
+          stroke-width="1" fill="url(#screen)"></rect>
+    <text x="30" y="25" fill=none stroke="grey"
+          style="font-size: 16px" font-family="sans-serif">HOMEWORK</text>
+</svg>
+</body>
+</html>
